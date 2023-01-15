@@ -1,0 +1,27 @@
+{
+  "name": "mbkm_batch3_final_project3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "build": "npx sequelize-cli db:migrate && npx sequelize-cli db:seed --seed 20221024165442-seeding_admin_datas.js",
+    "db:create": "NODE_ENV=development npx sequelize-cli db:create",
+    "db:migrate": "NODE_ENV=development npx sequelize-cli db:migrate",
+    "db:seed": "NODE_ENV=development npx sequelize-cli db:seed --seed 20221024165442-seeding_admin_datas.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^8.5.1",
+    "pg": "^8.8.0",
+    "sequelize": "^6.25.3"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.5.1"
+  }
+}
